@@ -11,7 +11,7 @@ output reg DIVIDED_CLK = 0
 
 reg [WIDTH-1:0]counter; 
 
-always@(posedge CLK, posedge RST)
+always@(posedge CLK)
 begin
 	if(RST) begin
 		counter <= 0;
