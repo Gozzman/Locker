@@ -1,0 +1,22 @@
+module FSM(
+input CLK,
+input RST,
+input BTNA,
+input BTNB,
+input BTNC,
+input BTND,
+input BTNE,
+input BTNF,
+output SUCESS,
+output WRONG
+);
+
+reg [2:0]state;
+//assign SUCESS  = {BTNB, BNTF}
+
+always@(posedge CLK, posedge RST)
+begin
+if(RST)
+	state <= 0;
+	
+end

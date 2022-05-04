@@ -1,0 +1,15 @@
+module ANODE_COUNTER(
+    input CE,
+    input CLK,
+    input RST,
+    output reg [1:0] CNT
+);
+
+always @ (posedge CLK, posedge RST)
+begin
+	if(RST) 
+		CNT <= 0;
+	else if(CE) 
+		CNT <= CNT + 1'b1;
+end
+endmodule

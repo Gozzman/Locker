@@ -1,0 +1,10 @@
+module Locker_top(
+input wire CLK,
+input wire RST,
+input wire BTNA,
+input wire BTNB,
+input wire BTNC,
+input wire BTND,
+input wire BTNE,
+input wire BTNF
+);

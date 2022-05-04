@@ -1,0 +1,26 @@
+module CATHODE_DC(
+input CLK,
+input data,
+output reg [6:0]segments
+);
+
+
+always@(posedge clk)
+begin 
+	case(data)
+		1'd0: segments = 7'b1111110;
+		1'd1: segments = 7'b0110000;
+		1'd2: segments = 7'b1101101;
+		1'd3: segments = 7'b1111001;
+		1'd4: segments = 7'b0110011;
+		1'd5: segments = 7'b1011011;
+		1'd6: segments = 7'b1011111;
+		1'd7: segments = 7'b1110000;
+		1'd8: segments = 7'b1111111;
+		1'd9: segments = 7'b1111011;
+		default: segments = 7'b0000000;
+	endcase
+end
+
+endmodule
+		
