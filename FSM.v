@@ -24,6 +24,8 @@ reg [2:0]state;
 reg [3:0]data [0:5];
 reg [3:0]sucess_comb [0:5];
 
+integer i;
+
 initial begin
 	state = `S0;	
 	sucess_comb[0] = 4'd1;
