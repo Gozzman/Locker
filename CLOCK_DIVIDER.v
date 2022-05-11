@@ -19,7 +19,7 @@ begin
 		end
 	else if (counter == (DIV_VALUE-1)) begin
 		DIVIDED_CLK <= 1;
-		DIVIDED_CLK <= 0;
+		counter <= 0;
 		end
 	else begin
 		counter <= counter + 1;
